@@ -1,0 +1,29 @@
+Obtain the domain name from the url
+
+Input Format
+
+The input will be a string. For Eg: 'https://www.youtube.com'
+
+Constraints
+
+none
+
+Output Format
+
+The Output format should be in string. For Eg: youtube.com
+
+Sample Input 0
+
+http://www.google.com
+Sample Output 0
+
+google.com
+
+
+OUTPUT:
+s=input()
+for i in range(len(s)):
+    if s[i]==".":
+        print(s[i+1:])
+        break
+        

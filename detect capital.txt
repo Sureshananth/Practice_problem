@@ -1,0 +1,35 @@
+We define the usage of capitals in a word to be right when one of the following cases holds:
+
+All letters in this word are capitals, like "USA". All letters in this word are not capitals, like "leetcode". Only the first letter in this word is capital, like "Google". Given a string word, return true if the usage of capitals in it is right.
+
+Input Format
+
+USA
+
+Constraints
+
+1 <= word.length <= 100 word consists of lowercase and uppercase English letters.
+
+Output Format
+
+true
+
+Sample Input 0
+
+FlaG
+Sample Output 0
+
+false
+
+OUTPUT:
+a=input()
+if (a.isupper()):
+    print("true")
+elif(a.islower()):
+    print("true")
+elif(a[0].isupper()):
+    if(a[1:].islower()):
+        print("true")
+    else:print("false")    
+else:
+    print("false")
